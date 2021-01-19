@@ -1,0 +1,6 @@
+# 项目排除路径
+/mingrui-shop-basics/mingrui-shop-basic-zuul-server/target/
+/mingrui-shop-basics/mingrui-shop-basics-eureka-server/target/
+/mingrui-shop-commoms/mingrui-shop-common-core/target/
+/mingrui-shop-service/mingrui-shop-service-xxx/target/
+/mingrui-shop-service-api/mingrui-shop-service-api-xxx/target/
