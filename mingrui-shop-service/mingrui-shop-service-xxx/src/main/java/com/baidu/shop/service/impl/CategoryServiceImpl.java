@@ -20,6 +20,12 @@ public class CategoryServiceImpl extends BaseApiService implements CategoryServi
     private CategoryMapper categoryMapper;
 
     @Override
+    public Result<List<CategoryEntity>> getCategoryByBrandId(Integer brandId) {
+        List<CategoryEntity> list = categoryMapper.getCategoryByBrandId(brandId);
+        return this.setResultSuccess(list);
+    }
+
+    @Override
     public Result<JsonObject> deleteCategoryByPid(Integer id) {
 
         if (ObjectUtil.isNull(id) || id <= 0)return this.setResultError("id不合法");
